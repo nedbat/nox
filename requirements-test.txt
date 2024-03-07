@@ -1,3 +1,4 @@
+git+https://github.com/nedbat/coveragepy@nedbat/debug-1752#egg=coverage==0.0
 flask
 myst-parser
 pytest>=6.0
