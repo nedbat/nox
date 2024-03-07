@@ -59,7 +59,7 @@ def tests(session: nox.Session, tox_version: str) -> None:
         "--cov=nox",
         "--cov-config",
         "pyproject.toml",
-        "--cov-report=",
+        #"--cov-report=",
         *session.posargs,
         env={
             "COVERAGE_FILE": f".coverage.{sys.platform}.{session.python}.tox{tox_version.lstrip('<')}",
