@@ -97,7 +97,7 @@ log_cli_level = "info"
 testpaths = [ "tests" ]
 
 [tool.coverage.run]
-debug = [ "trace", "dataop", "dataop2", "process", "pid" ]
+debug = [ "trace", "dataop", "dataop2", "process", "pid", "config", "sys" ]
 debug_file = "/tmp/covdebug.txt"
 branch = true
 relative_files = true
