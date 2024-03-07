@@ -97,6 +97,8 @@ log_cli_level = "info"
 testpaths = [ "tests" ]
 
 [tool.coverage.run]
+debug = [ "trace", "dataop", "dataop2", "process", "pid" ]
+debug_file = "/tmp/covdebug.txt"
 branch = true
 relative_files = true
 omit = [ "nox/_typing.py" ]
