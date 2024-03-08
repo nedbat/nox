@@ -97,11 +97,11 @@ log_cli_level = "info"
 testpaths = [ "tests" ]
 
 [tool.coverage.run]
-debug = [ "trace", "dataop", "dataop2", "process", "pid", "config", "sys" ]
-debug_file = "/tmp/covdebug.txt"
+debug = [ "trace", "dataop", "dataop2", "process", "pid", "config", "sys", "pathmap" ]
 branch = true
 relative_files = true
 omit = [ "nox/_typing.py" ]
+debug_file = "/tmp/covdebug.txt"
 
 [tool.coverage.report]
 exclude_lines = [ "pragma: no cover", "if TYPE_CHECKING:", "@overload" ]
